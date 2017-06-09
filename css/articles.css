@@ -1,0 +1,135 @@
+header {
+  /*position: fixed;*/
+  background-color: #0c0000;
+  color: white;
+  clear: left;
+  width: 100%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: inline-block;;
+}
+
+h1 {
+  font-weight: lighter;
+  text-align: center;
+  margin: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: lighter;
+}
+
+h2 {
+  color: white;
+  font-weight: lighter;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-size: 2.5em;
+  margin: 0 0 0 0;
+}
+
+
+p.header-detail {
+  margin: 0 0 0 0;
+  padding: 5px;
+  padding-left: 15px;
+  color: white;
+}
+
+body {
+  background-color: #eaebed;
+  font-family: Helvetica;
+  font-weight: lighter;
+  margin: 0 0 0 0;
+}
+
+i.arrow {
+  color: white;
+  font-size: 3em;
+  padding: 10px;
+}
+
+.icon-box {
+  float: left;
+}
+
+.icon-box:hover {
+  cursor: pointer;
+}
+
+.header-box {
+  width: auto;
+  text-align: center;
+}
+
+.head-title {
+  display: inline-block;
+}
+
+.container {
+  display: flex;
+}
+
+.main-column {
+  padding: 10px;
+}
+
+.nav-column {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  background-color: black;
+}
+
+.card {
+  background-color: white;
+  width: inherit;
+  margin: 25px;
+  padding: 0 0 0 0;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+}
+
+.card-content {
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+.image-center-container {
+  text-align: center;
+  width: inherit;
+  position: relative;
+}
+
+img {
+  width: inherit;
+}
+
+p.article-link {
+  text-align: left;
+}
+
+p.article-link:hover {
+  cursor: pointer;
+}
+
+.image-header-container {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/kaaba2.png");
+
+  width: inherit;
+  height: 150px;
+
+  border-radius: 3px 3px 0 0;
+}
+
+.overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6) );
+  width: 100%;
+  height: 100%;
+  border-radius: 3px 3px 0 0;
+
+}

@@ -1,12 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" type="text/css" href="css/articles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
   <title>Articles</title>
 </head>
 <body>
-  All the articles
+  <header>
+    <div class="icon-box">
+      <a href="index.html"><i class="material-icons arrow">arrow_back</i></a>
+    </div>
+    <div class="header-box">
+      <div class="head-title">
+        <h1>Articles</h1>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="nav-column">
+      <p id="article_0" class="article-link" onclick="selectArticle(0)">Sabr wa Shukr Part I</p>
+      <hr>
+      <p id="article_1" class="article-link" onclick="selectArticle(1)">Sabr wa Shukr Part II</p>
+      <hr>
+      <p id="article_2" class="article-link" onclick="selectArticle(2)">Sabr me Shikwa</p>
+      <hr>
+      <p id="article_3" class="article-link" onclick="selectArticle(3)">Insan ko Sabr ki Takeet</p>
+      <hr>
+      <p id="article_4" class="article-link" onclick="selectArticle(4)">Nabi, Rasool aur Sabr</p>
+    </div>
+    <div class="main-column">
+      <div class="card">
+        <div class="image-header-container">
+          <div class="overlay">
+            <h2 id="header_title"></h2>
+            <p class="header-detail">By Afzalunnisa Begum</p>
+          </div>
+        </div>
+        <div class="card-content">
+          <div class="image-center-container">
+            <img src="img/bismill2.gif">
+          </div>
+          <div class="image-center-container">
+            <img id="article_image" src="" alt="Article">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 <script>
+  // the possible articles
+  var articleNames = ["Sabr wa Shukr Part I", "Sabr wa Shukr Part II", "Sabr me Shikwa", "Insan ko Sabr ki Takeet", "Nabi, Rasool aur Sabr"];
+  var articleImages = ["saber_v_shukr_complete1.gif", "sabrwa3.gif", "s-shikwa-1.GIF", "sabr4.2.gif", "sabr5.1.gif"];
+  var articleDetails = ["Patience and Gratitude", "Patience and Gratitude", "Patience and Complaint", "", ""];
+
+  // get the article index from the url
+  var array = location.search.split("?");
+  var articleIndex;
+  if (array.length >= 2) {
+    articleIndex = parseInt(array[1]);
+  } else {
+    articleIndex = 0;
+  }
+
+  // now set the article and the title
+  document.getElementById('header_title').innerHTML = articleNames[articleIndex];
+  document.getElementById('article_image').src = "articles/" + articleImages[articleIndex];
+
+  // function to change the articles
+  function selectArticle(index) {
+    document.getElementById('header_title').innerHTML = articleNames[index];
+    document.getElementById('article_image').src = "articles/" + articleImages[index];
+    console.log("DOING IT");
+  }
+
 </script>
 </html>
