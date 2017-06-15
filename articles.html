@@ -23,7 +23,7 @@
     </div>
     <div class="main-column">
       <div class="card">
-        <div class="image-header-container">
+        <div id="img_header" class="image-header-container">
           <div class="overlay">
             <h2 id="header_title"></h2>
             <p class="header-detail">By Afzalunnisa Begum</p>
@@ -47,17 +47,17 @@
   // the possible articles
   var articles = ["Adal_Infradi_Adal_Ijtemay.png",
                   "Adal_v_Insaf_10.png",
-                  "Adal_v_Insaf_11.tiff",
+                  "Adal_v_Insaf_11.png",
                   "Adal_v_Insaf_Safead_Ghar_Safead_Banda.png",
-                  "Allah_Ki_Muqqerar_Kerdah_Had.tiff",
+                  "Allah_Ki_Muqqerar_Kerdah_Had.png",
                   "Amanaten_Ehl_Amanat_Ke_Supoed.png",
                   "Blijen_Bad_Kerke.png",
                   "Do_Muslim_Groh_Ya_Do_Muslim_Firque.png",
-                  "Gear_Muslim_Ke_Feasly.tiff",
+                  "Gear_Muslim_Ke_Feasly.png",
                   "Insafke_Sath_Amanaten_Ehl_Amant_Ke_Supord_Kerne_Ka_Hukm.gif",
                   "Insan_ko_Sabr_ki_Takeet.gif",
                   "Masayb_Awe_Quadrate_Afat_Allah_Ke_Janib_Se_Intebha.png",
-                  "Mizan_v_Tarazo.tiff",
+                  "Mizan_v_Tarazo.png",
                   "Nabi,_Rasool_aur_Sabr.gif",
                   "Sabr_me_Shikwa.GIF",
                   "Sabr_wa_Shukr_Part_I.gif",
@@ -68,6 +68,9 @@
     var element = event.srcElement;
     document.getElementById('header_title').innerHTML = element.innerHTML;
     document.getElementById('article_image').src = "articles/" + element.id;
+    var imageNum = Math.floor(Math.random() * 10) + 1;
+    var path = "'headerImg/" + imageNum + ".jpg'";
+    document.getElementById('img_header').style.backgroundImage = "url(" + path + ")";
   }
 
   // This function returns the display name for a file name
@@ -97,8 +100,11 @@
   }
 
   // now set the article and the title
-  document.getElementById('header_title').innerHTML = getName(articles[articleIndex]);
-  document.getElementById('article_image').src = "articles/" + articles[articleIndex];
+  document.getElementById('header_title').innerHTML = getName(articles[0]);
+  document.getElementById('article_image').src = "articles/" + articles[0];
+  var imageNum = Math.floor(Math.random() * 10) + 1;
+  var path = "'headerImg/" + imageNum + ".jpg'";
+  document.getElementById('img_header').style.backgroundImage = "url(" + path + ")";
 
 </script>
 </html>

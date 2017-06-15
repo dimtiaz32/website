@@ -1,5 +1,4 @@
 header {
-  /*position: fixed;*/
   background-color: #0c0000;
   color: white;
   clear: left;
@@ -10,7 +9,7 @@ header {
 
 body {
   background-color: #eaebed;
-  font-family: Helvetica;
+  font-family: Geneva;
   font-weight: lighter;
   margin: 0 0 0 0;
 }
@@ -27,7 +26,39 @@ h1 {
 p.header-detail {
   text-align: center;
   margin: 0 0 0 0;
-  padding: 5px;
+  padding: 10px;
+}
+
+.line {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  height: 2px;
+}
+
+button.flat-button.header {
+  border-style: solid;
+  background-color: #0c0000;
+  color: white;
+  border-color: white;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1em;
+  border-width: 3px;
+}
+
+button.flat-button.body {
+  border-color: #0c0000;
+  background-color: white;
+  color: #0c0000;
+  font-size: 1em;
+  margin: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button.flat-button:hover {
+  cursor:pointer;
 }
 
 .container {
@@ -47,8 +78,9 @@ p.header-detail {
   width: inherit;
   margin: 10px;
   padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3px;
+  height: 100%;
 }
 
 .card.middle {
@@ -67,6 +99,8 @@ p.card-header {
 
 .image-center-container {
   text-align: center;
+  margin: auto;
+  border-radius: 3px;
 }
 
 .image-header-container {
@@ -74,9 +108,19 @@ p.card-header {
   background-size: cover;
   background-position: center;
   background-image: url("../img/cbamallahcopy.jpg");
-
-  width: inherit;;
+  margin: 0 0 0 0;
+  width: auto;
   height: 100px;
 
   border-radius: 3px 3px 0 0;
+}
+
+img {
+  border-radius: 3px;
+  max-width: 100%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  text-align: center;
+  resize: both;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
 }

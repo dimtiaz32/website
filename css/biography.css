@@ -10,7 +10,7 @@ header {
 
 body {
   background-color: #eaebed;
-  font-family: Helvetica;
+  font-family: Geneva;
   font-weight: lighter;
   margin: 0 0 0 0;
 }
@@ -28,7 +28,6 @@ h1 {
 i.arrow {
   color: white;
   font-size: 3em;
-  padding: 10px;
 }
 
 .icon-box {
@@ -91,4 +90,12 @@ img {
 
 .poem-container {
   text-align: center;
+}
+
+i {
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  margin: 5px;
+  padding: 0 0 0 0;
 }
