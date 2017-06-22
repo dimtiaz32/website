@@ -1,5 +1,5 @@
 header {
-  background-color: #0c0000;
+  background-color: #91b8f7;
   color: white;
   clear: left;
   text-align: center;
@@ -38,7 +38,7 @@ p.header-detail {
 
 button.flat-button.header {
   border-style: solid;
-  background-color: #0c0000;
+  background-color: #91b8f7;
   color: white;
   border-color: white;
   margin: 20px;
