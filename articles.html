@@ -13,6 +13,7 @@
     <div class="header-box">
       <div class="head-title">
         <h1>Articles</h1>
+        <p class="header-detail">By Afzalunnisa Begum</p>
       </div>
     </div>
   </header>
@@ -23,18 +24,18 @@
     </div>
     <div class="main-column">
       <div class="card">
-        <div id="img_header" class="image-header-container">
-          <div class="overlay">
-            <h2 id="header_title"></h2>
-            <p class="header-detail">By Afzalunnisa Begum</p>
+        <div class="card-header">
+          <div class="image-center-container">
+            <img id="img_header" class="article-header">
           </div>
         </div>
+
         <div class="card-content">
           <div class="image-center-container">
             <img src="img/bismill2.gif">
           </div>
           <div class="image-center-container">
-            <img id="article_image" src="" alt="Article">
+            <img id="article_image" class="article" src="" alt="Article">
           </div>
         </div>
       </div>
@@ -51,7 +52,7 @@
                   "Adal_v_Insaf_Safead_Ghar_Safead_Banda.png",
                   "Allah_Ki_Muqqerar_Kerdah_Had.png",
                   "Amanaten_Ehl_Amanat_Ke_Supoed.png",
-                  "Blijen_Bad_Kerke.png",
+                  "Amale_e_Saleah.png",
                   "Do_Muslim_Groh_Ya_Do_Muslim_Firque.png",
                   "Gear_Muslim_Ke_Feasly.png",
                   "Insafke_Sath_Amanaten_Ehl_Amant_Ke_Supord_Kerne_Ka_Hukm.gif",
@@ -66,11 +67,12 @@
   // function to change the articles
   function selectArticle(event) {
     var element = event.srcElement;
-    document.getElementById('header_title').innerHTML = element.innerHTML;
+    //document.getElementById('header_title').innerHTML = element.innerHTML;
     document.getElementById('article_image').src = "articles/" + element.id;
     var imageNum = Math.floor(Math.random() * 10) + 1;
-    var path = "'headerImg/" + imageNum + ".jpg'";
-    document.getElementById('img_header').style.backgroundImage = "url(" + path + ")";
+    var path = "headerImg/" + imageNum + ".jpg";
+    //document.getElementById('img_header').src = "url(" + path + ")";
+    document.getElementById('img_header').src = path;
   }
 
   // This function returns the display name for a file name
@@ -90,21 +92,24 @@
   // set the article names in the nav
   var list = document.getElementById('nav');
   for (var i = 0; i < articles.length; i++) {
-    var elem = document.createElement("P");
-    elem.classList.add('article-link');
-    elem.innerHTML = getName(articles[i]);
+    var elem = document.createElement("IMG");
+    //elem.classList.add('article-link');
+    //elem.innerHTML = getName(articles[i]);
     elem.addEventListener("click", selectArticle);
+    elem.src = "articleTitles/" + articles[i].split(".")[0] + "(HEAD).png";
     elem.setAttribute("id", articles[i]);
+    elem.classList.add('article-title');
     list.appendChild(elem);
     list.appendChild(document.createElement("HR"));
   }
 
   // now set the article and the title
-  document.getElementById('header_title').innerHTML = getName(articles[0]);
+  //document.getElementById('header_title').innerHTML = getName(articles[0]);
   document.getElementById('article_image').src = "articles/" + articles[0];
   var imageNum = Math.floor(Math.random() * 10) + 1;
-  var path = "'headerImg/" + imageNum + ".jpg'";
-  document.getElementById('img_header').style.backgroundImage = "url(" + path + ")";
+  var path = "headerImg/" + imageNum + ".jpg";
+  // document.getElementById('img_header').src = "url(" + path + ")";
+  document.getElementById('img_header').src = path;
 
 </script>
 </html>

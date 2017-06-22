@@ -1,11 +1,13 @@
+
+
 header {
   /*position: fixed;*/
-  background-color: #0c0000;
+  background-color: #91b8f7;
   color: white;
   clear: left;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: inline-block;;
+  display: inline-block;
 }
 
 h1 {
@@ -39,6 +41,7 @@ body {
   font-family: Geneva;
   font-weight: lighter;
   margin: 0 0 0 0;
+  width: 100vw;
 }
 
 i.arrow {
@@ -70,12 +73,14 @@ i.arrow {
 .main-column {
   padding: 10px;
   flex: 4;
+  max-width: 70%;
 }
 
 .nav-column {
   flex: 1;
   padding: 10px;
   background-color: white;
+  max-width: 30%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
@@ -92,6 +97,10 @@ hr {
   border-radius: 3px;
 }
 
+.card-header {
+  text-align: center;
+}
+
 .card-content {
   margin: 0 0 0 0;
   padding: 0 0 0 0;
@@ -101,10 +110,31 @@ hr {
   text-align: center;
   width: inherit;
   position: relative;
+  padding: 5px;
 }
 
 img {
   width: inherit;
+}
+
+img.article-header {
+  /*max-width: 300px;*/
+
+  border-radius: 3px;
+  max-width: 60%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  text-align: center;
+  resize: both;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+img.article-title {
+  max-width: 100%;
+}
+
+img.article {
+  max-width: 100%;
 }
 
 p.article-link {
@@ -141,4 +171,8 @@ i {
   border-width: 3px;
   padding: 0 0 0 0;
   margin: 5px;
+}
+
+img:hover {
+  cursor: pointer;
 }
