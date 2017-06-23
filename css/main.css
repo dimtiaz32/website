@@ -72,9 +72,6 @@ button.flat-button:hover {
   flex: 1;
 }
 
-.column-middle {
-  flex: 1;
-}
 
 .card {
   background-color: white;
