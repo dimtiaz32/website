@@ -1,5 +1,5 @@
 header {
-  background-color: #5e9bff;
+  background-color: #91b8f7;
   color: white;
   clear: left;
   text-align: center;
@@ -10,10 +10,8 @@ header {
 }
 
 body {
-  /*background-color: #eaebed;*/
-  /*background-color: grey;*/
-  font-family: Geneva;
-  /*font-family: "Trebuchet MS";*/
+  background-color: #eaebed;
+  font-family: Verdana;
   font-weight: lighter;
   margin: 0 0 0 0;
   background-image: url("../backgrounds/otis_redding.png");
@@ -32,6 +30,38 @@ p.header-detail {
   text-align: center;
   margin: 0 0 0 0;
   padding: 10px;
+}
+
+.line {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  height: 2px;
+}
+
+button.flat-button.header {
+  border-style: solid;
+  background-color: #91b8f7;
+  color: white;
+  border-color: white;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1em;
+  border-width: 3px;
+}
+
+button.flat-button.body {
+  border-color: #0c0000;
+  background-color: white;
+  color: #0c0000;
+  font-size: 1em;
+  margin: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+button.flat-button:hover {
+  cursor:pointer;
 }
 
 .container {
@@ -65,7 +95,7 @@ p.header-detail {
   width: inherit;
   margin: 10px;
   padding: 10px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
   border-radius: 3px;
   height: 100%;
   background-image: url("../backgrounds/asanoha-400px.png");
@@ -144,14 +174,18 @@ article {
 
 .image-center-container {
   text-align: center;
+/*<<<<<<< HEAD
   width: auto;
   margin: auto;
   max-width: 300px;
   background-color: white;
   padding: 0 0 0 0;
-  /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 3px;
-  background-color: transparent;
+  background-color: transparent;*/
+
+  margin: auto;
+  border-radius: 3px;
 }
 
 .image-header-container {

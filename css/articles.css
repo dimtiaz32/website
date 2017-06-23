@@ -82,7 +82,10 @@ i.arrow {
   padding: 10px;
   background-color: white;
   max-width: 30%;
+/*<<<<<<< HEAD
   box-shadow: 6px 0px 10px -4px rgba(0, 0, 0, 0.5), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
+=======*/
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
 }
 
 hr {
