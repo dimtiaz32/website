@@ -1,11 +1,13 @@
+
+
 header {
   /*position: fixed;*/
-  background-color: #0c0000;
+  background-color: black;
   color: white;
   clear: left;
-  width: 100%;
+  width: 100vw;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  display: inline-block;;
+  display: inline-block;
 }
 
 h1 {
@@ -15,6 +17,7 @@ h1 {
   padding-top: 10px;
   padding-bottom: 10px;
   font-weight: lighter;
+  font-size: 2.5em;
 }
 
 h2 {
@@ -36,15 +39,15 @@ p.header-detail {
 
 body {
   background-color: #eaebed;
-  font-family: Helvetica;
+  font-family: Verdana;
   font-weight: lighter;
   margin: 0 0 0 0;
+  width: 100vw;
 }
 
 i.arrow {
   color: white;
   font-size: 3em;
-  padding: 10px;
 }
 
 .icon-box {
@@ -71,13 +74,15 @@ i.arrow {
 .main-column {
   padding: 10px;
   flex: 4;
+  max-width: 70%;
 }
 
 .nav-column {
   flex: 1;
   padding: 10px;
   background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+  max-width: 30%;
+  box-shadow: 6px 0px 10px -4px rgba(0, 0, 0, 0.5), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
 }
 
 hr {
@@ -87,10 +92,14 @@ hr {
 .card {
   background-color: white;
   width: inherit;
-  margin: 25px;
+  margin: 10px;
   padding: 0 0 0 0;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
   border-radius: 3px;
+}
+
+.card-header {
+  text-align: center;
 }
 
 .card-content {
@@ -102,10 +111,31 @@ hr {
   text-align: center;
   width: inherit;
   position: relative;
+  padding: 5px;
 }
 
 img {
   width: inherit;
+}
+
+img.article-header {
+  /*max-width: 300px;*/
+
+  border-radius: 3px;
+  max-width: 60%;
+  height: auto;
+  width: auto\9; /* ie8 */
+  text-align: center;
+  resize: both;
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1), 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+img.article-title {
+  max-width: 100%;
+}
+
+img.article {
+  max-width: 100%;
 }
 
 p.article-link {
@@ -120,7 +150,7 @@ p.article-link:hover {
   overflow: hidden;
   background-size: cover;
   background-position: center;
-  background-image: url("../img/kaaba2.png");
+  /*background-image: url("../img/kaaba2.png");*/
 
   width: inherit;
   height: 150px;
@@ -129,9 +159,21 @@ p.article-link:hover {
 }
 
 .overlay {
-  background: linear-gradient(135deg, rgba(0, 0, 0, .6), rgba(0, 0, 0, .6) );
+  background: linear-gradient(135deg, rgba(0, 0, 0, .4), rgba(0, 0, 0, .4) );
   width: 100%;
   height: 100%;
   border-radius: 3px 3px 0 0;
 
+}
+
+i {
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+  padding: 0 0 0 0;
+  margin: 5px;
+}
+
+img:hover {
+  cursor: pointer;
 }
