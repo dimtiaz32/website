@@ -86,8 +86,11 @@ button.flat-button:hover {
 
   /*background-image: url("../backgrounds/asanoha-400px.png");*/
   background: url("../backgrounds/persian-809945_1280.jpg") center;
-  background-repeat: repeat;
-  background-size: 100% auto;
+  /*background-repeat: repeat;
+  background-size: 100% auto;*/
+    background-size:     cover;                      /* <------ */
+    background-repeat:   no-repeat;
+    background-position: center center;
 }
 
 .card-small {
