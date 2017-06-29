@@ -11,7 +11,7 @@ header {
 
 body {
   background-color: #eaebed;
-  font-family: Verdana;
+  font-family: "Century Gothic";
   font-weight: lighter;
   margin: 0 0 0 0;
   background-image: url("../backgrounds/otis_redding.png");
@@ -301,4 +301,8 @@ button.flat-button-body-2 {
   border-width: 3px;
   text-align: center;
   background-color: transparent;
+}
+
+button {
+  font: "Century Gothic";
 }
