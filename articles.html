@@ -6,14 +6,14 @@
   <title>Articles</title>
 </head>
 <body>
+
   <header>
-    <div class="icon-box">
-      <a href="index.html"><i class="material-icons arrow">arrow_back</i></a>
-    </div>
-    <div class="header-box">
-      <div class="head-title">
+    <div class="image-header-container">
+      <div class="overlay-2">
         <h1>Articles</h1>
         <p class="header-detail">By Afzalunnisa Begum</p>
+        <div class="line"></div>
+        <button class="flat-button header" onclick="window.location.href='index.html'">Home</button>
       </div>
     </div>
   </header>
@@ -45,7 +45,9 @@
 </body>
 
 <script>
-  // the possible articles
+  // array of all the possible articles the possible articles
+  // IMPORTANT: These are the ids of the sidebar image elements, that is how it knows which
+  // image to use
   var articles = ["Adal_Infradi_Adal_Ijtemay.png",
                   "Adal_v_Insaf_10.png",
                   "Adal_v_Insaf_11.png",
@@ -64,37 +66,12 @@
                   "Sabr_wa_Shukr_Part_I.gif",
                   "Sabr_wa_Shukr_Part_II.gif"];
 
-  // function to change the articles
-  function selectArticle(event) {
-    var element = event.srcElement;
-    //document.getElementById('header_title').innerHTML = element.innerHTML;
-    document.getElementById('article_image').src = "articles/" + element.id;
-    var imageNum = Math.floor(Math.random() * 10) + 1;
-    var path = "headerImg/" + imageNum + ".jpg";
-    //document.getElementById('img_header').src = "url(" + path + ")";
-    document.getElementById('img_header').src = path;
-  }
 
-  // This function returns the display name for a file name
-  function getName(fileName) {
-    return fileName.split(".")[0].split("_").join(" ");
-  }
-
-  // get the article index from the url
-  // var array = location.search.split("?");
-  // var articleIndex;
-  // if (array.length >= 2) {
-  //   articleIndex = parseInt(array[1]);
-  // } else {
-  //   articleIndex = 0;
-  // }
-
-  // set the article names in the nav
+  // stuff to do when loaded
+  // set the article names in the side nav
   var list = document.getElementById('nav');
   for (var i = 0; i < articles.length; i++) {
     var elem = document.createElement("IMG");
-    //elem.classList.add('article-link');
-    //elem.innerHTML = getName(articles[i]);
     elem.addEventListener("click", selectArticle);
     elem.src = "articleTitles/" + articles[i].split(".")[0] + "(HEAD).png";
     elem.setAttribute("id", articles[i]);
@@ -103,13 +80,47 @@
     list.appendChild(document.createElement("HR"));
   }
 
+  // get the article index from the url
+  var array = location.search.split("?");
+  var articleIndex;
+  if (array.length >= 2) {
+    articleIndex = parseInt(array[1]);
+    articleIndex = articleIndex % articles.length;
+  } else {
+    articleIndex = 0;
+  }
+
   // now set the article and the title
-  //document.getElementById('header_title').innerHTML = getName(articles[0]);
-  document.getElementById('article_image').src = "articles/" + articles[0];
+  document.getElementById('article_image').src = "articles/" + articles[articleIndex];
   var imageNum = Math.floor(Math.random() * 10) + 1;
   var path = "headerImg/" + imageNum + ".jpg";
-  // document.getElementById('img_header').src = "url(" + path + ")";
   document.getElementById('img_header').src = path;
+
+
+
+
+
+  // function to change the articles
+  function selectArticle(event) {
+    // Get the image using the id of the selected element
+    var element = event.srcElement;
+    document.getElementById('article_image').src = "articles/" + element.id; // id is the image file name
+    var imageNum = Math.floor(Math.random() * 10) + 1; // Get a random image
+    var path = "headerImg/" + imageNum + ".jpg";
+    document.getElementById('img_header').src = path;
+
+    // change the url
+    var articleIndex = articles.indexOf(element.id); // get the index of the selected article
+    if (history.pushState) {
+      var newurl = window.location.protocol + "//" + window.location.host + window.location.pathname + '?' + articleIndex;
+      window.history.pushState({path:newurl},'',newurl);
+    }
+  }
+
+  // This function returns the display name for a file name
+  function getName(fileName) {
+    return fileName.split(".")[0].split("_").join(" ");
+  }
 
 </script>
 </html>

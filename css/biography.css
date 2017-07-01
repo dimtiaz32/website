@@ -10,7 +10,7 @@ header {
 
 body {
   background-color: #eaebed;
-  font-family: Geneva;
+  font-family: Century Gothic;
   font-weight: lighter;
   margin: 0 0 0 0;
 }
@@ -18,11 +18,10 @@ body {
 h1 {
   text-align: center;
   margin: 0 0 0 0;
-  padding-top: 10px;
-  padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 5px;
   font-weight: lighter;
   font-size: 3em;
-  display: inline-block;
 }
 
 i.arrow {
@@ -98,4 +97,47 @@ i {
   border-width: 3px;
   margin: 5px;
   padding: 0 0 0 0;
+}
+
+.image-header-container {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-image: url("../img/kaaba2.png");
+
+  width: inherit;
+  height: 150px;
+
+  border-radius: 3px 3px 0 0;
+}
+
+.overlay {
+  background: linear-gradient(135deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5) );
+  width: 100%;
+  height: 100%;
+  border-radius: 3px 3px 0 0;
+  text-align: center;
+}
+
+.line {
+  background-color: white;
+  width: 90%;
+  margin: auto;
+  height: 2px;
+}
+
+button.flat-button.header {
+  border-style: solid;
+  border-color: white;
+  color: white;
+  background: none;
+  background-color: transparent;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1em;
+  border-width: 3px;
+}
+
+button.flat-button:hover {
+  cursor:pointer;
 }

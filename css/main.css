@@ -5,13 +5,11 @@ header {
   text-align: center;
   width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  /*padding: 20px---;
-  padding-bottom: 0px;---*/
 }
 
 body {
   background-color: #eaebed;
-  font-family: "Century Gothic";
+  font-family: Century Gothic;
   font-weight: lighter;
   margin: 0 0 0 0;
   background-image: url("../backgrounds/otis_redding.png");
@@ -30,34 +28,6 @@ p.header-detail {
   text-align: center;
   margin: 0 0 0 0;
   padding: 10px;
-}
-
-.line {
-  background-color: white;
-  width: 90%;
-  margin: auto;
-  height: 2px;
-}
-
-button.flat-button.header {
-  border-style: solid;
-  background-color: #91b8f7;
-  color: white;
-  border-color: white;
-  margin: 20px;
-  padding: 10px;
-  font-size: 1em;
-  border-width: 3px;
-}
-
-button.flat-button.body {
-  border-color: #0c0000;
-  background-color: white;
-  color: #0c0000;
-  font-size: 1em;
-  margin: 20px;
-  padding: 10px;
-  margin-top: 10px;
 }
 
 button.flat-button:hover {
@@ -80,14 +50,13 @@ button.flat-button:hover {
   /*padding: 10px;*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 3px;
-
   /*background-image: url("../backgrounds/asanoha-400px.png");*/
   background: url("../backgrounds/persian-809945_1280.jpg") center;
   /*background-repeat: repeat;
   background-size: 100% auto;*/
-    background-size:     cover;                      /* <------ */
-    background-repeat:   no-repeat;
-    background-position: center center;
+  background-size:     cover;                      /* <------ */
+  background-repeat:   no-repeat;
+  background-position: center center;
 }
 
 .card-small {
@@ -110,6 +79,7 @@ p.card-header {
   text-align: center;
   font-size: 1.5em;
   margin: 0 0 0 0;
+  padding: 10px;
 }
 
 .main-content {
@@ -157,29 +127,8 @@ article {
   justify-content: center;
 }
 
-.image-center-container-header {
-  text-align: center;
-  width: auto;
-  margin: auto;
-  max-width: 300px;
-  background-color: white;
-  padding: 0 0 0 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 3px;
-}
-
 .image-center-container {
   text-align: center;
-/*<<<<<<< HEAD
-  width: auto;
-  margin: auto;
-  max-width: 300px;
-  background-color: white;
-  padding: 0 0 0 0;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  border-radius: 3px;
-  background-color: transparent;*/
-
   margin: auto;
   border-radius: 3px;
 }
@@ -242,46 +191,17 @@ img {
 .line-black {
   background-color: black;
   width: 90%;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5px;
+  margin-bottom: 5px;
   height: 2px;
 }
 
-button.flat-button-header {
+button.flat-button.header {
   border-style: solid;
   border-color: white;
   color: white;
-  background-color: #5e9bff;
-  margin: 20px;
-  padding: 10px;
-  font-size: 1em;
-  border-width: 3px;
-}
-
-button.flat-button-header:hover {
-  cursor:pointer;
-}
-
-button.flat-button-body {
-  border-style: solid;
-  border-color: #5e9bff;
-  color: #5e9bff;
-  background-color: white;
-  margin: 20px;
-  padding: 10px;
-  font-size: 1em;
-  border-width: 3px;
-  text-align: center;
-}
-
-button.flat-button-body:hover {
-  cursor:pointer;
-}
-
-button.flat-button-header-2 {
-  border-style: solid;
-  border-color: white;
-  color: white;
-  /*background-color: #5e9bff;*/
   background: none;
   background-color: transparent;
   margin: 20px;
@@ -290,7 +210,19 @@ button.flat-button-header-2 {
   border-width: 3px;
 }
 
-button.flat-button-body-2 {
+button.flat-button.body {
+  border-style: solid;
+  border-color: white;
+  color: white;
+  margin: 20px;
+  padding: 10px;
+  font-size: 1em;
+  border-width: 3px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+button.flat-button.body-dark {
   border-style: solid;
   border-color: black;
   color: black;
@@ -303,6 +235,10 @@ button.flat-button-body-2 {
   background-color: transparent;
 }
 
+button.flat-button:hover {
+  cursor:pointer;
+}
+
 button {
-  font: "Century Gothic";
+  font-family: : "Century Gothic";
 }
