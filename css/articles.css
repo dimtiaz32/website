@@ -123,7 +123,8 @@ img.article-header {
 
   border-radius: 3px;
   max-width: 60%;
-  height: auto;
+  max-height: 200px;
+  /*height: auto;*/
   width: auto\9; /* ie8 */
   text-align: center;
   resize: both;
