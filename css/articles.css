@@ -17,16 +17,6 @@ h1 {
   font-size: 2.5em;
 }
 
-h2 {
-  color: white;
-  font-weight: lighter;
-  padding-left: 15px;
-  padding-top: 20px;
-  font-size: 2.5em;
-  margin: 0 0 0 0;
-}
-
-
 p.header-detail {
   margin: 0 0 0 0;
   padding: 5px;
@@ -40,28 +30,6 @@ body {
   font-weight: lighter;
   margin: 0 0 0 0;
   width: 100vw;
-}
-
-i.arrow {
-  color: white;
-  font-size: 3em;
-}
-
-.icon-box {
-  float: left;
-}
-
-.icon-box:hover {
-  cursor: pointer;
-}
-
-.header-box {
-  width: auto;
-  text-align: center;
-}
-
-.head-title {
-  display: inline-block;
 }
 
 .container {
@@ -79,14 +47,7 @@ i.arrow {
   padding: 10px;
   background-color: white;
   max-width: 30%;
-/*<<<<<<< HEAD
-  box-shadow: 6px 0px 10px -4px rgba(0, 0, 0, 0.5), -12px 0 8px -4px rgba(0, 0, 0, 0.8);
-=======*/
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-}
-
-hr {
-  background-color: black;
 }
 
 .card {
@@ -165,15 +126,7 @@ p.article-link:hover {
   height: 100%;
   border-radius: 3px 3px 0 0;
   text-align: center;
-}
-
-i {
-  border-style: solid;
-  border-color: white;
-  border-width: 3px;
-  padding: 0 0 0 0;
-  margin: 5px;
-}
+} 
 
 img:hover {
   cursor: pointer;

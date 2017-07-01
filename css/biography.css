@@ -1,5 +1,4 @@
 header {
-  /*position: fixed;*/
   background-color: black;
   color: white;
   clear: left;
@@ -24,24 +23,6 @@ h1 {
   font-size: 3em;
 }
 
-i.arrow {
-  color: white;
-  font-size: 3em;
-}
-
-.icon-box {
-  float: left;
-}
-
-.icon-box:hover {
-  cursor: pointer;
-}
-
-.header-box {
-  width: auto;
-  text-align: center;
-}
-
 .card {
   background-color: white;
   width: inherit;
@@ -50,7 +31,6 @@ i.arrow {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border-radius: 3px;
 }
-
 
 .card-content {
   margin: 0 0 0 0;
@@ -82,21 +62,12 @@ article {
 
 img {
   width: inherit;
-
   max-width: 100%;
-    height: auto;
+  height: auto;
 }
 
 .poem-container {
   text-align: center;
-}
-
-i {
-  border-style: solid;
-  border-color: white;
-  border-width: 3px;
-  margin: 5px;
-  padding: 0 0 0 0;
 }
 
 .image-header-container {
