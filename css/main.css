@@ -99,16 +99,13 @@ p.card-header {
 .article-container {
   width: 70%;
   height: 100%;
-  display: table-cell;
   margin: auto;
+  padding: 15px;
 }
 
 .vert-center {
-  /*position: relative;
-  top: 50%;
-  transform: translateY(-50%);*/
   vertical-align: middle;
-  display: inline-block;
+  display: inline;
   text-align: center;
   margin: 20px;
   padding: 30px;
