@@ -103,7 +103,7 @@
   // function to change the articles
   function selectArticle(event) {
     // Get the image using the id of the selected element
-    var element = event.srcElement;
+    var element = event.srcElement || event.target;
     document.getElementById('article_image').src = "articles/" + element.id; // id is the image file name
     var imageNum = Math.floor(Math.random() * 10) + 1; // Get a random image
     var path = "headerImg/" + imageNum + ".jpg";
